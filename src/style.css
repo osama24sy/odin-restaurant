@@ -1,8 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+:root {
+    --eggshell: #f4f1deff;
+    --terra-cotta: #e07a5fff;
+    --independence: #3d405bff;
+    --green-sheen: #81b29aff;
+    --deep-champagne: #f2cc8fff;
+}
+
 html, body {
     width: 100%;
     margin: 0px;
+    height: 100%;
 }
 
 body {
-    background-color: aquamarine;
+    background-image: linear-gradient(to bottom right, var(--deep-champagne) , var(--eggshell) , var(--deep-champagne));
 }
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Header.js */
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--independence);
+    text-align: center;
+    width: 70vw;
+    padding: 50px 75px;
+}
+
+#header > p {
+    color: var(--eggshell);
+    font-family: "Parisienne";
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+}
+
+.logo {
+    font-size: 3em;
+}
+
+.slogan {
+    font-size: 1.5em;
+}
+
+
+/* Navbar.js */
