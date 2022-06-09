@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&display=swap');
 
 :root {
     --eggshell: #f4f1deff;
@@ -6,6 +6,8 @@
     --independence: #3d405bff;
     --green-sheen: #81b29aff;
     --deep-champagne: #f2cc8fff;
+    --parisienne-font: "Parisienne";
+    --great-vibes-font: "Great Vibes";
 }
 
 html, body {
@@ -33,6 +35,7 @@ body {
     text-align: center;
     width: 70vw;
     padding: 50px 75px;
+    padding-bottom: 0px;
 }
 
 #header > p {
@@ -55,3 +58,31 @@ hr {
 
 
 /* Navbar.js */
+
+#nav {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nav > div {
+    padding: 0px 50px;
+}
+
+#nav > div:hover {
+    background-color: rgba(256, 256, 256, 0.2);
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(40, 42, 61);
+}
+
+#nav > div > p {
+    color: var(--eggshell);
+    font-family: var(--great-vibes-font);
+    font-size: 2em;
+    margin: 20px  0px;
+}
