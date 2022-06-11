@@ -3,6 +3,7 @@ import createHeader from "./asset/pages/header";
 import createNavbar from './asset/pages/navbar';
 import createMain from './asset/pages/main-page';
 import createMenu from './asset/pages/menu-page';
+import createAbout from './asset/pages/about-page';
 
 // Setting the wrapper div
 const body = document.querySelector("body");
@@ -32,5 +33,6 @@ menu.addEventListener("click", () => {
 
 about.addEventListener("click", () => {
     document.getElementById("main").innerHTML = '';
+    createAbout();
 });
 

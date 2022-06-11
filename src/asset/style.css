@@ -147,3 +147,14 @@ hr {
     font-weight: bold;
     color: rgba(0, 0, 0, 0.8);
 }
+
+#about-text {
+    color: var(--eggshell);
+    font-size: 1.5em;
+}
+
+#about-div {
+    background-color: rgba(61, 64, 91, 0.37);
+    padding: 10px;
+    border-radius: 5%;
+}
