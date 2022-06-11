@@ -1,32 +1,34 @@
-import './style.css';
-import createHeader from "./header";
-import createNavbar from './navbar';
-import createMain from './main-page';
-import cafe from './cafe.jpg';
+import './asset/style.css';
+import createHeader from "./asset/pages/header";
+import createNavbar from './asset/pages/navbar';
+import createMain from './asset/pages/main-page';
 
 // Setting the wrapper div
 const body = document.querySelector("body");
 const content = document.createElement("div");
 content.id = "content";
 body.appendChild(content);
+const main = document.createElement("div");
+main.id = 'main';
+content.appendChild(main);
 
 // Creating the header and the navbar
 createHeader();
 createNavbar();
+createMain();
 
 // event listeners for the navbar
-let page = 'home';
 
 home.addEventListener("click", () => {
-    page = 'home';
+    document.getElementById("main").innerHTML = '';
+    createMain();
 });
 
 menu.addEventListener("click", () => {
-    page = 'menu';
+    document.getElementById("main").innerHTML = '';
 });
 
 about.addEventListener("click", () => {
-    page = 'about';
+    document.getElementById("main").innerHTML = '';
 });
 
-createMain();

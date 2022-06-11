@@ -1,10 +1,8 @@
-import coffee from './coffee-pouring.jpg';
+import coffee from '../images/coffee-pouring.jpg';
 
 const createMain = () => {
     const content = document.querySelector("#content");
-
-    const main = document.createElement("div");
-    main.id = 'main';
+    const main = document.querySelector("#main");
 
     const img = new Image();
     img.src = coffee;
@@ -15,7 +13,6 @@ const createMain = () => {
     main.appendChild(img);
     main.appendChild(desc);
     content.appendChild(main);
-    
 }
 
 export default createMain;
