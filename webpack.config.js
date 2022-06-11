@@ -11,7 +11,8 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/'
+        publicPath: '/',
+        clean: true,
     },
     module: {
         rules: [
@@ -20,12 +21,12 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(png|jpg|jpeg|gif)$/i,
                 use: [
-                  {
-			loader: 'file-loader',
-                   },
-		],
+                    {
+                        loader: 'file-loader',
+                    },
+                ],
             },
         ],
     },
