@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nuosu+SIL&display=swap');
 
 :root {
     --eggshell: #f4f1deff;
@@ -110,4 +110,37 @@ hr {
     font-size: 3em;
     color: var(--independence);
     text-shadow: 4px 0px 0px var(--eggshell);
+}
+
+/* MENU-PAGE.JS */
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#menu > div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5vw;
+    background-color: rgba(240, 248, 255, 0.226);
+    width: 100%;
+    justify-content: flex-end;
+    padding: 10px;
+    border-radius: 3%;
+}
+
+#menu > div > img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+#menu > div > p {
+    font-size: 1.5em;
+    font-family: 'Nuoso SIL';
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
 }

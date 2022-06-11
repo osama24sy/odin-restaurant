@@ -2,6 +2,7 @@ import './asset/style.css';
 import createHeader from "./asset/pages/header";
 import createNavbar from './asset/pages/navbar';
 import createMain from './asset/pages/main-page';
+import createMenu from './asset/pages/menu-page';
 
 // Setting the wrapper div
 const body = document.querySelector("body");
@@ -26,6 +27,7 @@ home.addEventListener("click", () => {
 
 menu.addEventListener("click", () => {
     document.getElementById("main").innerHTML = '';
+    createMenu();
 });
 
 about.addEventListener("click", () => {
