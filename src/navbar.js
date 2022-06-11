@@ -1,6 +1,8 @@
 const createNavbar = () => {
     const header = document.querySelector("#header");
 
+    let page = 'home';
+
     const nav = document.createElement("div");
     nav.id = 'nav';
 
