@@ -18,6 +18,8 @@ html, body {
 
 body {
     background-image: url('./images/cafe.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #content {
@@ -116,7 +118,8 @@ hr {
 
 #menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 10px;
 }
@@ -127,7 +130,7 @@ hr {
     align-items: center;
     gap: 5vw;
     background-color: rgba(240, 248, 255, 0.226);
-    width: 100%;
+    width: 400px;
     justify-content: flex-end;
     padding: 10px;
     border-radius: 3%;
